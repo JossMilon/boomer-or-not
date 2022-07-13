@@ -12,11 +12,25 @@ export function Result({ result, isFetching, isError }) {
       An error occured. Are you sure about spelling?
     </div>
   ) : result === "" ? (
-    <div className="loadingOrError">
-      Au sens strict du terme, le boomer est un individu né entre 1945 et 1965,
-      pendant une période appelée “le baby-boom”. Les années économiquement
-      fastes qui ont suivi la seconde guerre mondiale ont engendré un pic de
-      natalité significatif, qualifié de “baby-boom”.
+    <div className="welcomeScreen">
+      <div>
+        <strong>Baby boomers</strong> were born between 1946 and 1964. They're
+        currently between 57-75 years old (71.6 million in the U.S.)
+      </div>
+      <div>
+        <strong>Gen X</strong> was born between 1965 and 1979/80 and is
+        currently between 41-56 years old (65.2 million people in the U.S.)
+      </div>
+      <div>
+        <strong>Gen Y, or Millennials</strong>, were born between 1981 and
+        1994/6. They are currently between 25 and 40 years old (72.1 million in
+        the U.S.)
+      </div>
+      <div>
+        <strong>Gen Z</strong> is the newest generation, born between 1997 and
+        2012. They are currently between 9 and 24 years old (nearly 68 million
+        in the U.S.)
+      </div>
     </div>
   ) : (
     <div className="result">
