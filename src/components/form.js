@@ -1,10 +1,12 @@
-export function Form({ setSearch, refetch }) {
+export function Form({ search, setSearch, refetch }) {
   return (
     <form
       className="form"
       onSubmit={(event) => {
         event.preventDefault();
-        refetch();
+        if (search !== "") {
+          refetch();
+        }
       }}
     >
       <input

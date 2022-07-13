@@ -11,12 +11,19 @@ export function Result({ result, isFetching, isError }) {
     <div className="loadingOrError">
       An error occured. Are you sure about spelling?
     </div>
+  ) : result === "" ? (
+    <div className="loadingOrError">
+      Au sens strict du terme, le boomer est un individu né entre 1945 et 1965,
+      pendant une période appelée “le baby-boom”. Les années économiquement
+      fastes qui ont suivi la seconde guerre mondiale ont engendré un pic de
+      natalité significatif, qualifié de “baby-boom”.
+    </div>
   ) : (
     <div className="result">
       <div className="extraInfo">
         <img src={result.src} alt={result.name} />
         <label>
-          {result.name}, {result.birthYear}
+          {result.name}, born in {result.birthYear}
         </label>
       </div>
       <div className="generation">

@@ -48,9 +48,10 @@
   }
   .loadingOrError {
     font-size: 30px;
-    display: flex;
-    justify-content: center;
     font-family: "Open Sans", sans-serif;
+    line-height: 40px;
+    max-width: 900px;
+    margin: auto;
   }
   .result {
     display: flex;
