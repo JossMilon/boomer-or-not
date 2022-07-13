@@ -33,15 +33,21 @@
       max-width: fit-content;
       border: 1px solid black;
       border-radius: 4px;
+      transition: all 0.5s;
       &:hover {
         cursor: pointer;
         background-color: black;
         color: white;
-        transition: all 0.5s;
       }
     }
   }
   .instructions {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+  }
+  .loadingOrError {
+    font-size: 30px;
     display: flex;
     justify-content: center;
     font-family: "Open Sans", sans-serif;
